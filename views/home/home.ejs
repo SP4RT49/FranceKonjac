@@ -1,0 +1,84 @@
+<%- include('../common/head.ejs') %>
+<main class="hero_style area">
+
+    <div class="p-2 container">
+
+        <h1>Bonjour <%- isAdmin ? "Admin" : "visiteur !"%></h1>
+        <div class="news">
+            <h3>New's !</h3>
+            <% if(isAdmin){%>
+            <div class="n-list">
+                <%} else {%>
+                <div class="n-list blur">
+                    <%}%>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title ">Ajout du Tchat !</h5>
+                                <p class="card-text">Une nouvelle page a été créé par le biais d'un cours très prenant!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">Ajustement du CSS</h5>
+                                <p class="card-text">La page doit quand même avoir un minimum de style !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 ">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</main>
+<%- include('../common/footer.ejs') %>
