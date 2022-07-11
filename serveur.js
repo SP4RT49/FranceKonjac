@@ -40,6 +40,38 @@ app.get('/', function (req, res) {
         });
 
     })
+    // TOUT LES PRODUITS
+    .get('/allproducts', function (req, res) {
+
+        res.render('pages/allproducts.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
+    // PAGE PRODUIT
+    .get('/product', function (req, res) {
+
+        res.render('pages/product.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
+    // PAGE RECETTE
+    .get('/recette', function (req, res) {
+
+        res.render('pages/recette.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
+    // PAGE HISTOIRE
+    .get('/histoire', function (req, res) {
+
+        res.render('pages/histoire.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
     // LOGIN
     .get('/login', function (req, res) {
 
@@ -84,7 +116,7 @@ app.get('/', function (req, res) {
 
 //Error 404
 app.use(function (req, res, next) {
-    res.status(404).render('404/404.ejs', isAdmin);
+    res.status(404).render('404/404.ejs', {isAdmin,loginError});
 });
 
 console.log('[' + port + ']Serveur démarré !');

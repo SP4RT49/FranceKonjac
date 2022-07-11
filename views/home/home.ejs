@@ -1,84 +1,170 @@
 <%- include('../common/head.ejs') %>
-<main class="hero_style area">
+<main id="content" class="hero_style area">
+    <div class="nav-content"></div>
+    <section class="masthead-filter">
+        <div class="masthead">
+            
+        </div>
+    </section>
+    <!-- Curves Sub_Hero-->
+    <div class="badges">
+        <div class="curved d-flex position-relative">
+            <div class="container d-flex flex-row justify-content-between align-items-center position-absolute top-50 start-50 translate-middle w-100">
+                <div class="col-2 mx-2" style="margin-bottom: 125px; "><img src="/img/icon/Sous-hero/gluten.svg" alt="" ></div>
+                <div class="col-2 mx-2" style="margin-bottom: 50px; "><img src="/img/icon/Sous-hero/prodTerre.svg" alt="" ></div>
+                <div class="col-2 mx-2"><img src="/img/icon/Sous-hero/fabFR.svg" alt="" ></div>
+                <div class="col-2 mx-2" style="margin-bottom: 50px;"><img src="/img/icon/Sous-hero/sulfate.svg" alt="" ></div>
+                <div class="col-2 mx-2" style="margin-bottom: 125px;"><img src="/img/icon/Sous-hero/nature.svg" alt="" ></div>
+            </div>
+        </div>
+    </div>
 
-    <div class="p-2 container">
+    <!-- Bienfaits Konjac -->
+    <section class="page-section">
+        <div class="container">
+            <div class="twocol position-relative ">
+                <div><div class="d-flex justify-content-center"><img src="/img/konjacFeuille.png" alt="" width="450px"></div></div>
+                <div class="px-5">
+                    <h2 class="text-center text-secondaire text-amita">Les bienfaits du Konjac</h2>
+                    <p class="text-justify text-autre">Le konjac est une plante originaire du sud-est de l’Asie. Son tubercule est transformé en farine, puis en pâtes ou en riz.
+    
+                        <br><br>Grâce à son effet de satiété et son apport calorique réduit, le konjac est repris dans de nombreux régimes comme <span class="fw-bold">coupe-faim</span>, mais également pour lutter contre les excès de poids ainsi que l’obésité.
+                        
+                        <br><br>Autres propriétés de ce superaliment : le konjac, grâce à son indice glycémique faible, permet de diminuer le taux de mauvais <span class="fw-bold">cholestérol</span>. Il détoxifie également l’organisme et favorise le transit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h1>Bonjour <%- isAdmin ? "Admin" : "visiteur !"%></h1>
-        <div class="news">
-            <h3>New's !</h3>
-            <% if(isAdmin){%>
-            <div class="n-list">
-                <%} else {%>
-                <div class="n-list blur">
-                    <%}%>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title ">Ajout du Tchat !</h5>
-                                <p class="card-text">Une nouvelle page a été créé par le biais d'un cours très prenant!
-                                </p>
+    <!-- Products-->
+    <section class="page-section bg-secondaire position-relative" id="products">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center text-white mt-0"> NOTRE SELECTION ❤</h2>
+            <hr class="divider divider-light" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <a href="/product">
+                        <div class="card border-0 rounded my-2 pos1" style="width: 350px;">
+                            <div class="hover_product">
+                                <img src="/img/Paquet_Konjac.png" class="card-img-top" alt="...">
+                                <div class="card-body bg-autre text-white">
+                                    <h5 class="card-title">Riz de Konjac</h5>
+                                    <p class="card-text">19.90€</p>
+                                  </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title">Ajustement du CSS</h5>
-                                <p class="card-text">La page doit quand même avoir un minimum de style !</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <a href="/product">
+                        <div class="card border-0 rounded my-2 pos1" style="width: 350px;">
+                            <div class="hover_product">
+                                <img src="/img/Paquet_Konjac.png" class="card-img-top" alt="...">
+                                <div class="card-body bg-autre text-white">
+                                    <h5 class="card-title">Spaghetti de Konjac</h5>
+                                    <p class="card-text">19.90€</p>
+                                  </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 ">
-                        <div class="card bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="card border-0 rounded my-2 pos1" style="width: 350px;">
+                        <div class="hover_product">
+                            <img src="/img/Paquet_Konjac.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-autre text-white">
+                                <h5 class="card-title">Nouilles de Konjac</h5>
+                                <p class="card-text">19.90€</p>
+                              </div>
                         </div>
                     </div>
                 </div>
-
-
+            </div>
+            <div class="mt-4 col-lg-12 text-center">
+                <a class="btn text-white bg-autre btn-xl" href="/allproducts">Voir les Produits</a>
             </div>
         </div>
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+        <div class="position-absolute top-0 end-0 " style="width: 25%;">
+            <img src="/img/Illustration_feuilles2.svg" alt="" width="100%">
+        </div>
+        <div class="position-absolute bottom-0 start-0 " style="width: 25%;">
+            <img src="/img/Illustration_feuilles1.svg" alt="" width="100%">
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section class="page-section" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mt-0 text-uppercase text-secondaire">Une alternative à l'importation de konjac !</h2>
+                    <hr class="divider divider-light" />
+                    <div class="card bg-dark">
+                        <img src="/img/couvertue_video.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4 px-lg-5">
+            <h3></h3>
+            <div class="col-12 text-center mt-5">
+                <h3 class="text-autre mt-5 text-amita">Nos idées Recettes</h3>
+                <div class="position-relative d-flex justify-content-center align-items-center">
+                    <div class="">
+                        <img src="/img/platInfo.svg" alt="" width="500px">
+                        
+                            <div class="position-absolute top-100 start-50 translate-middle">
+                                <a href="">
+                                    <img src="/img/foodPastaEtiquette.svg" alt="">
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Blog -->
+    <section class="page-section bg-principal position-relative">
+        <div class="container d-flex justify-content-center flex-column align-items-center position-relative">
+            <h2 class="text-white mb-3">DERNIER ARTICLE DU BLOG</h2>
+            <div class="twocol mt-3 bg-principal" style="z-index: 1;">
+
+                <div class="">
+                    <img src="/img/img_presse.png" alt="" width="800px">
+                </div>
+                <p class="text-white text-justify m-3">
+                    Vous souhaitiez affiner votre silhouette ou entamer une véritable perte de poids ? 
+                    <br><br>Alors bienvenue sur notre blog ! Les régimes sont souvent synonymes de restriction, faim et de frustration. 
+
+                    <br><br>Connaissez-vous les aliments « minceur » permettant de concilier perte de poids,  goût et plaisir ?
+
+                    <br><br>Autres propriétés de ce superaliment : 
+                    le konjac, grâce à son indice glycémique.
+
+                    <br><br><a href="" class="text-white">Lire la suite  ></a>
+                </p>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 start-0">
+            <img src="/img/blog_feuilles1.png" alt="">
+        </div>
+        <div class="position-absolute top-0 end-0">
+            <img src="/img/blog_feuilles2.png" alt="">
+        </div>
+    </section>
+    
+    <!-- La presse en parle -->
+    <section class="page-section">
+        <div class="container d-flex justify-content-center flex-column align-items-center">
+            <h2 class="text-amita">La Presse en parle...</h2>
+            <div class="">
+                <img src="/img/actuMag.png" alt="">
+            </div>
+        </div>
+    </section>
 </main>
 <%- include('../common/footer.ejs') %>
