@@ -80,6 +80,30 @@ app.get('/', function (req, res) {
             loginError
         })
     })
+    // PAGE OU ACHETER
+    .get('/ouAcheter', function (req, res) {
+
+        res.render('pages/ouAcheter.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
+    // PAGE CONTACT
+    .get('/contacter', function (req, res) {
+
+        res.render('pages/contact.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
+    // PAGE BLOG
+    .get('/blog', function (req, res) {
+
+        res.render('pages/blog.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
     // LOGIN
     .get('/login', function (req, res) {
 

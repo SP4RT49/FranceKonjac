@@ -1,0 +1,51 @@
+<%- include('../common/head.ejs') %>
+<main id="content" class="hero_style area">
+    <div class="nav-content"></div>
+    
+    <!-- hero de la page histoire -->
+    <div class="hero_contact d-flex justify-content-center align-items-center">
+        <h1 class="text-center text-uppercase text-white">Contact</h1>
+    </div>
+    <!-- section histoire -->
+    <div class="badges pos1">
+        <div class="curved d-flex align-items-center justify-content-center position-relative pos1">
+            
+            <h2 class="text-center text-white mt-0"> Une question ou une remarque ?
+                <br>Écrivez-nous !</h2>
+        </div>
+    </div>
+    <section class="page-section position-relative">
+        <div class="container">
+            <div class="twocol">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control bg-principal-border" id="floatingInput" placeholder="Smith" style="border-radius: 30px;">
+                    <label for="floatingInput" class="text-autre px-4">Nom *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control bg-principal-border" id="floatingInput" placeholder="John" style="border-radius: 30px;">
+                    <label for="floatingInput" class="text-autre px-4">Prénom *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control bg-principal-border" id="floatingInput" placeholder="name@example.com" style="border-radius: 30px;">
+                    <label for="floatingInput" class="text-autre px-4">Email *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control bg-principal-border" id="floatingInput" placeholder="xxxxxxxxxxx" style="border-radius: 30px;">
+                    <label for="floatingInput" class="text-autre px-4">Téléphone</label>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control bg-principal-border" id="floatingInput" placeholder="Sujet" style="border-radius: 30px;">
+                <label for="floatingInput" class="text-autre px-4">Sujet</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control bg-principal-border" placeholder="Ecrire un message" id="floatingTextarea" style="height: 200px; border-radius: 20px;"></textarea>
+                <label for="floatingTextarea" class="text-autre px-4">Message *</label>
+            </div>
+            <div class="m-auto bg-autre text-center mt-5 px-3 py-2" style="width: 175px; border-radius: 30px;"><a href="" class="text-white">Envoyer</a></div>
+        </div>
+        <img src="/img/all_product_Feuilles1.png" alt="" width="15%" class="position-absolute top-0 end-0" style="transform: translate(-50px, -145px) rotate(162deg);">
+        <img src="/img/all_product_Feuilles2.png" alt="" width="15%" class="position-absolute bottom-0 start-0" style="transform: translate(0px, 45px) rotate(162deg);">
+    </section>
+</main>
+<%- include('../common/footer.ejs') %>

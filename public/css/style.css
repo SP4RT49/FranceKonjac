@@ -2203,9 +2203,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #fab19d;
+  border-color: #6EA7B2;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  box-shadow: 0 0 0 0.25rem #6ea7b27e;
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -11650,6 +11650,36 @@ clip-path: ellipse(65% 95% at 50% 0%);
 
 .hero_recette_info{
   background-image: url("/img/bg_recette_info.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+/* PAGE OU ACHETER */
+
+.hero_ouacheter{
+  background-image: url("/img/hero_ouacheter.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+/* PAGE CONTACTER */
+
+.hero_contact{
+  background-image: url("/img/hero_contact.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+/* PAGE BLOG */
+
+.hero_blog{
+  background-image: url("/img/hero_blog.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
