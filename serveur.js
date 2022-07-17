@@ -64,6 +64,14 @@ app.get('/', function (req, res) {
             loginError
         })
     })
+    // PAGE INFO RECETTE
+    .get('/recette/info', function (req, res) {
+
+        res.render('pages/recetteInfo.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
     // PAGE HISTOIRE
     .get('/histoire', function (req, res) {
 
@@ -119,5 +127,5 @@ app.use(function (req, res, next) {
     res.status(404).render('404/404.ejs', {isAdmin,loginError});
 });
 
-console.log('[' + port + ']Serveur démarré !');
+console.log('[' + port + ']Serveur démarré ! http://localhost:'+ port +'');
 server.listen(port);
