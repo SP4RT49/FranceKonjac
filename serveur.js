@@ -104,6 +104,14 @@ app.get('/', function (req, res) {
             loginError
         })
     })
+    // PAGE BLOG
+    .get('/faq', function (req, res) {
+
+        res.render('pages/faq.ejs', {
+            isAdmin,
+            loginError
+        })
+    })
     // LOGIN
     .get('/login', function (req, res) {
 

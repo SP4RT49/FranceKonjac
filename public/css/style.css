@@ -4659,7 +4659,6 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
   text-align: left;
   background-color: #fff;
   border: 0;
@@ -4673,9 +4672,8 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #dc5834;
-  background-color: #feefeb;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: #202B50;
+  background-color: white !important;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dc5834'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -4702,9 +4700,9 @@ textarea.form-control-lg {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #fab19d;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  border-color: white !important;
+  box-shadow: none !important;
 }
 
 .accordion-header {
@@ -4713,7 +4711,7 @@ textarea.form-control-lg {
 
 .accordion-item {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: none;
 }
 .accordion-item:first-of-type {
   border-top-left-radius: 0.25rem;
@@ -11675,9 +11673,7 @@ clip-path: ellipse(65% 95% at 50% 0%);
   background-repeat: no-repeat;
   height: 50vh;
 }
-
 /* PAGE BLOG */
-
 .hero_blog{
   background-image: url("/img/hero_blog.png");
   background-position: center;
@@ -11685,3 +11681,12 @@ clip-path: ellipse(65% 95% at 50% 0%);
   background-repeat: no-repeat;
   height: 50vh;
 }
+/* PAGE FAQ */
+.hero_faq{
+  background-image: url("/img/hero_faq.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
