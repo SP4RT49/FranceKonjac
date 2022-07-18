@@ -126,13 +126,6 @@ app.get('/', function (req, res) {
         const name = `text.txt`;
         res.download(file, name);
     })
-    // TCHAT
-    .get('/tchat', function (req, res) {
-        res.render('tchat/tchat.ejs', {
-            isAdmin,
-            loginError
-        });
-    })
     // FORMULAIRE DE CONNEXION
     .post('/login', function (req, res) {
         console.log(req.body)
@@ -156,8 +149,11 @@ app.get('/', function (req, res) {
 
 //Error 404
 app.use(function (req, res, next) {
-    res.status(404).render('404/404.ejs', {isAdmin,loginError});
+    res.status(404).render('404/404.ejs', {
+        isAdmin,
+        loginError
+    });
 });
 
-console.log('[' + port + ']Serveur démarré ! http://localhost:'+ port +'');
+console.log('[' + port + ']Serveur démarré ! http://localhost:' + port + '');
 server.listen(port);
